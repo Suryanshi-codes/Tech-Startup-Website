@@ -1,0 +1,470 @@
+/* ===========================
+   Google Font & Reset
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#f8f9fc;
+    color:#333;
+    line-height:1.6;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+/* ===========================
+   Header
+=========================== */
+
+header{
+    background:#ffffff;
+    position:sticky;
+    top:0;
+    width:100%;
+    box-shadow:0 2px 10px rgba(0,0,0,.08);
+    z-index:1000;
+}
+
+header .container{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 0;
+}
+
+.logo{
+    font-size:30px;
+    font-weight:700;
+    color:#2563eb;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:30px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:#333;
+    font-weight:500;
+    transition:.3s;
+}
+
+nav ul li a:hover{
+    color:#2563eb;
+}
+
+/* ===========================
+   Hero Section
+=========================== */
+
+.hero{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:50px;
+    padding:80px 10%;
+    background:linear-gradient(135deg,#2563eb,#4f46e5);
+    color:#fff;
+}
+
+.hero-content{
+    flex:1;
+}
+
+.hero-content h1{
+    font-size:52px;
+    margin-bottom:20px;
+}
+
+.hero-content p{
+    font-size:18px;
+    margin-bottom:30px;
+}
+
+.btn{
+    display:inline-block;
+    padding:14px 30px;
+    background:#fff;
+    color:#2563eb;
+    text-decoration:none;
+    border-radius:50px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#e2e8f0;
+}
+
+.hero-image{
+    flex:1;
+}
+
+.hero-image img{
+    width:100%;
+    border-radius:20px;
+}
+
+/* ===========================
+   About
+=========================== */
+
+.about{
+    text-align:center;
+    padding:80px 10%;
+}
+
+.about h2{
+    font-size:38px;
+    margin-bottom:20px;
+    color:#2563eb;
+}
+
+.about p{
+    max-width:800px;
+    margin:auto;
+    font-size:18px;
+}
+
+/* ===========================
+   Services
+=========================== */
+
+.services{
+    padding:80px 10%;
+    background:#eef4ff;
+}
+
+.services h2{
+    text-align:center;
+    font-size:38px;
+    color:#2563eb;
+    margin-bottom:50px;
+}
+
+.service-container{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+}
+
+.card{
+    background:#fff;
+    padding:35px;
+    text-align:center;
+    border-radius:15px;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card i{
+    font-size:45px;
+    color:#2563eb;
+    margin-bottom:20px;
+}
+
+.card h3{
+    margin-bottom:15px;
+}
+
+/* ===========================
+   Pricing
+=========================== */
+
+.pricing{
+    padding:80px 10%;
+}
+
+.pricing h2{
+    text-align:center;
+    font-size:38px;
+    color:#2563eb;
+    margin-bottom:50px;
+}
+
+.pricing-container{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+}
+
+.price-card{
+    background:#fff;
+    padding:40px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.price-card:hover{
+    transform:translateY(-10px);
+}
+
+.price-card h3{
+    font-size:28px;
+    margin-bottom:15px;
+}
+
+.price-card h1{
+    color:#2563eb;
+    margin-bottom:20px;
+}
+
+.price-card p{
+    margin:10px 0;
+}
+
+.price-card a{
+    display:inline-block;
+    margin-top:20px;
+    text-decoration:none;
+    background:#2563eb;
+    color:#fff;
+    padding:12px 25px;
+    border-radius:30px;
+}
+
+.popular{
+    border:3px solid #2563eb;
+}
+
+/* ===========================
+   Team
+=========================== */
+
+.team{
+    padding:80px 10%;
+    background:#eef4ff;
+}
+
+.team h2{
+    text-align:center;
+    font-size:38px;
+    color:#2563eb;
+    margin-bottom:50px;
+}
+
+.team-container{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+}
+
+.member{
+    background:#fff;
+    padding:30px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.member:hover{
+    transform:translateY(-10px);
+}
+
+.member img{
+    width:150px;
+    height:150px;
+    border-radius:50%;
+    object-fit:cover;
+    margin-bottom:20px;
+}
+
+.member h3{
+    margin-bottom:8px;
+}
+
+/* ===========================
+   Contact
+=========================== */
+
+.contact{
+    padding:80px 10%;
+}
+
+.contact h2{
+    text-align:center;
+    font-size:38px;
+    color:#2563eb;
+    margin-bottom:40px;
+}
+
+.contact form{
+    max-width:700px;
+    margin:auto;
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+.contact input,
+.contact textarea{
+    padding:15px;
+    border:1px solid #ccc;
+    border-radius:10px;
+    font-size:16px;
+}
+
+.contact button{
+    background:#2563eb;
+    color:#fff;
+    border:none;
+    padding:15px;
+    border-radius:10px;
+    font-size:18px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.contact button:hover{
+    background:#1d4ed8;
+}
+
+/* ===========================
+   Footer
+=========================== */
+
+footer{
+    background:#111827;
+    color:#fff;
+    text-align:center;
+    padding:25px;
+}
+
+/* ===========================
+   Responsive Design
+=========================== */
+
+@media(max-width:992px){
+
+.hero{
+    flex-direction:column;
+    text-align:center;
+}
+
+.hero-content h1{
+    font-size:42px;
+}
+
+.service-container,
+.pricing-container,
+.team-container{
+    grid-template-columns:repeat(2,1fr);
+}
+
+header .container{
+    flex-direction:column;
+    gap:20px;
+}
+
+nav ul{
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+}
+
+@media(max-width:768px){
+
+.service-container,
+.pricing-container,
+.team-container{
+    grid-template-columns:1fr;
+}
+
+.hero{
+    padding:60px 8%;
+}
+
+.hero-content h1{
+    font-size:34px;
+}
+
+.hero-content p{
+    font-size:16px;
+}
+
+.about h2,
+.services h2,
+.pricing h2,
+.team h2,
+.contact h2{
+    font-size:30px;
+}
+
+nav ul{
+    flex-direction:column;
+    gap:15px;
+    align-items:center;
+}
+
+header .container{
+    padding:15px 0;
+}
+
+.logo{
+    font-size:26px;
+}
+
+.btn{
+    padding:12px 24px;
+}
+
+.contact form{
+    width:100%;
+}
+
+}
+
+@media(max-width:480px){
+
+.hero-content h1{
+    font-size:28px;
+}
+
+.hero{
+    padding:40px 5%;
+}
+
+.about,
+.services,
+.pricing,
+.team,
+.contact{
+    padding:60px 5%;
+}
+
+.card,
+.member,
+.price-card{
+    padding:25px;
+}
+
+.member img{
+    width:120px;
+    height:120px;
+}
+
+nav ul li a{
+    font-size:15px;
+}
+
+}
